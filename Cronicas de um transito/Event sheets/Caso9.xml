@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Caso9</name>
+    <events>
+        <event-block sid="7922545341236902">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2693841779546182" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="664813374393287" type="Faixa_sinal">
+                    <param id="0" name="Animation">&quot;Verde&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="9097074237884723" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="6505637110349466" type="pergunta">
+                    <param id="0" name="Text">&quot;Neste caso, qual carro tem a preferência de sair primeiro?&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2295792467015255" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="6618674446488653" type="button1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="241508148581515" type="Button2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9929705759952811" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5978061691272686" type="button1">
+                    <param id="0" name="Text">&quot;Carro Verde&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="7812438282732224" type="Button2">
+                    <param id="0" name="Text">&quot;Carro vermelho&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3281123751608283">
+            <conditions>
+                <condition id="0" name="On clicked" sid="734922580076716" type="button1" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="4425406672577275" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">300</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4342506583666441" type="pergunta">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="8425478114503093" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="7325565935727086" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="2085672758395996" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9457662496221406">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="695793331293774" type="Verde">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1050</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="2014691804031152" type="Vermelho">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">300</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="1440181312666478" type="Vermelho">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8487705585988342" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="9364818893680137" type="pergunta">
+                    <param id="0" name="Text">&quot;Correto! O carro da via sinalizada tem a preferência de partida!&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="9207063868584645" type="pergunta">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+                <action id="2" name="Set visible" sid="8971779315995191" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9914338412252897">
+            <conditions>
+                <condition id="0" name="On clicked" sid="9345066032264023" type="Button2" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="4355417848378931" type="Vermelho">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">200</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="7112616801494849" type="Vermelho">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="8117882329208548" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">300</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2415269877734558" type="pergunta">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="7751061934100075" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="3409339209111657" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6108971710306323">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9445570832420343" type="Verde">
+                    <param id="0" name="Object">Vermelho</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="5364555031501557" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="5173201824697786" type="Vermelho">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="617696878563723" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1523961877514568" type="pergunta">
+                    <param id="0" name="Text">&quot;Errado! Deveria ter esperado o carro da via sinalizada dar ultrapassar primeiro!&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="9896863949789911" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9768697264252276" type="pergunta">
+                    <param id="0" name="Y">pergunta.Y - 20</param>
+                </action>
+                <action id="2" name="Set visible" sid="4976086133135785" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3663483707832908">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6136147760306753" type="prosseguir" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2753212491431504" type="System">
+                    <param id="0" name="Layout">Final</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

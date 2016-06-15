@@ -377,6 +377,7 @@
         <layout>Caso6.xml</layout>
         <layout>Caso7.xml</layout>
         <layout>Caso8.xml</layout>
+        <layout>Caso9.xml</layout>
         <layout>Final.xml</layout>
     </layout-folder>
     <event-folder>
@@ -390,6 +391,7 @@
         <event-sheet>Caso2.xml</event-sheet>
         <event-sheet>Caso7.xml</event-sheet>
         <event-sheet>Caso8.xml</event-sheet>
+        <event-sheet>Caso9.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="0" />

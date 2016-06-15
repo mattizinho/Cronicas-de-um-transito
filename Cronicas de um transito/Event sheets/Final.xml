@@ -29,7 +29,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="4657508131403282" type="pergunta">
-                    <param id="0" name="Text">&quot;Sua pontuação final foi de: &quot; &amp; pontos &amp; &quot;/8! Estude melhor as regras de trânsito para ter mais segurança e confiança, e com certeza se sairá melhor na próxima!&quot;</param>
+                    <param id="0" name="Text">&quot;Sua pontuação final foi de: &quot; &amp; pontos &amp; &quot;/9! Estude melhor as regras de trânsito para ter mais segurança e confiança, e com certeza se sairá melhor na próxima!&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -43,7 +43,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="5395863579912698" type="pergunta">
-                    <param id="0" name="Text">&quot;Sua pontuação final foi de: &quot; &amp; pontos &amp; &quot;/8! Parabéns pela pontuação! Você deve conhecer mesmo o trânsito e respeitar suas leis!&quot;</param>
+                    <param id="0" name="Text">&quot;Sua pontuação final foi de: &quot; &amp; pontos &amp; &quot;/9! Parabéns pela pontuação! Você deve conhecer mesmo o trânsito e respeitar suas leis!&quot;</param>
                 </action>
             </actions>
         </event-block>
