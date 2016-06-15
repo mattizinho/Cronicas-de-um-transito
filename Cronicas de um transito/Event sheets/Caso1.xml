@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Caso1</name>
+    <events>
+        <variable constant="0" name="pontos" sid="7334315941310429" static="0" type="number">0</variable>
+        <event-block sid="2931843689398565">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8011848314658589" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="3553976916291745" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="6962743976282123" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+                <action id="0" name="Set text" sid="9375512100367127" type="kmh">
+                    <param id="0" name="Text">Verde.CustomMovement.Speed / 10 &amp; &quot;KM/H&quot; </param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1265477633034391">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7491688587857236" type="Verde">
+                    <param id="0" name="Object">block1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="5180372926379439" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9494151002236532" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="4471254813505848" type="button1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="2651617709384403" type="Button2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7485946766468753">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1414169018572916" type="button1" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="4174556925058819" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="3028829482015892" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="3714663114235531" type="Verde">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="1554570150046508" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">350</param>
+                </action>
+                <action id="0" name="Set text" sid="6724544216726545" type="kmh">
+                    <param id="0" name="Text">Verde.CustomMovement.Speed / 10 &amp; &quot;KM/H&quot; </param>
+                </action>
+                <action id="4" name="Set font color" sid="9204367783698082" type="pergunta">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+                <action id="-1" name="Set X" sid="3740516175976841" type="pergunta">
+                    <param id="0" name="X">918</param>
+                </action>
+                <action id="0" name="Set text" sid="4617233633457197" type="pergunta">
+                    <param id="0" name="Text">&quot;Ótimo, está dentro do limite máximo de velocidade!&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="6777633548483952" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="9396878369114211" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2364503028673404">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2639850236181454" type="Button2" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="4401810733307998" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="6808630481087211" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="3718439783179206" type="Verde">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="2361826989104555" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="8832443984807668" type="cop">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+                <action id="4" name="Set font color" sid="6675547727401645" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="-1" name="Set X" sid="9253381278010388" type="pergunta">
+                    <param id="0" name="X">918</param>
+                </action>
+                <action id="0" name="Set text" sid="4242298578078595" type="pergunta">
+                    <param id="0" name="Text">&quot;Está dirigindo além do limite de velocidade permitido! D:&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="1998052853577913" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4790183213409633">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2673208950706414" type="prosseguir" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3674127400386994" type="System">
+                    <param id="0" name="Layout">Caso2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Caso5</name>
+    <events>
+        <event-block sid="8638502179828543">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8700798703422675" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="2913298172536322" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1838124138686689" type="Verde">
+                    <param id="0" name="Animation">&quot;curvaEsq&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7379983056646671" type="Verde">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="4582743890413557" type="Verde">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="3091061728229358" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">250</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="8829411023323248" type="Verde">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="3246094697566351" type="pedestre">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">150</param>
+                </action>
+                <action id="-9" name="Set value" sid="5151989232004406" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="993992052722207">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7350542803573787" type="Verde">
+                    <param id="0" name="Object">block1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="3846689791187523" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="6252073045468212" type="pedestre">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1493550738257406" type="pedestre">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="2212745345825513" type="pergunta">
+                    <param id="0" name="Text">&quot;Quem tem prioridade nesta situação?&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="4076082474521667" type="button1">
+                    <param id="0" name="Text">&quot;O pedestre&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="875670284601841" type="Button2">
+                    <param id="0" name="Text">&quot;O motorista do veículo&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9625092963556863" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5814862431088308" type="button1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5906853427185488" type="Button2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6162735376312759">
+            <conditions>
+                <condition id="0" name="On clicked" sid="4533307310963593" type="button1" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="6930484778775036" type="pedestre">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7929033158089162" type="pedestre">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6450983058433297" type="block1" />
+                <action id="-9" name="Set value" sid="6139544339751176" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="7408739717758013" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="5607952345457312" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="1520819823530021" type="pergunta">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+                <action id="-10" name="Add to" sid="3861007778955498" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1237119634911986" type="pergunta">
+                    <param id="0" name="Text">&quot;Exato! Os pedestres tem sempre a preferência em faixas onde não há sinalização&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="3106742282384451" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2530939112963708">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4185153191931096" type="pedestre">
+                    <param id="0" name="Object">block3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="8895344655645979" type="Verde">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6426838204556894">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="602029077109504" type="Verde">
+                    <param id="0" name="Object">block2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4356821899633722" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="3858667674617533" type="Verde">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="2815567178556417" type="Verde">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9611030211414031">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2870562599070866" type="Button2" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="9814941077838511" type="Verde">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2687524548751406" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9403145601202545" type="block1" />
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="9071008724220299" type="pedestre">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9926570827489809" type="pedestre">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="9692239707056775" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="4564692365785188" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="3500918912362893" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="0" name="Set text" sid="1416279345566994" type="pergunta">
+                    <param id="0" name="Text">&quot;Cuidado com os pedestres! Eles tem preferência nas faixas!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5947498582768331">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4455310653326492" type="Verde">
+                    <param id="0" name="Object">block2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5122249368175186" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="1644706352286813" type="Verde">
+                    <param id="0" name="Angle">90</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="3275547617127963" type="Verde">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4903897519436668">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4633988777394147" type="Verde">
+                    <param id="0" name="Object">pedestre</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="2004677424551966" type="pedestre">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="23218593283722" type="pedestre">
+                    <param id="0" name="X">pedestre.x - 40</param>
+                </action>
+                <action id="4" name="Set animation" sid="6471877814231775" type="pedestre">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="8792482322545039" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6070885960502494">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1107870609476835" type="prosseguir" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7608487655948677" type="System">
+                    <param id="0" name="Layout">Caso6</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

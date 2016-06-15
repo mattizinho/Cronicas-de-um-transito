@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Caso3</name>
+    <events>
+        <variable constant="0" name="btn" sid="1896639199277538" static="0" type="number">0</variable>
+        <event-block sid="7217595715743814">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6676456783160798" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9717280685962587" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1628200288083481" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="7515840735302324" type="pergunta">
+                    <param id="0" name="Text">&quot;Use as setas para controlar o carro e realizar a baliza&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="255305952460402" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2612667536241255">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4805433856987306" type="Verde">
+                    <param id="0" name="Object">block1</param>
+                </condition>
+                <condition id="-13" name="Is between angles" sid="6414631600370795" type="Verde">
+                    <param id="0" name="First angle">268</param>
+                    <param id="1" name="Second angle">272</param>
+                </condition>
+                <condition behavior="Car" id="1" name="Compare speed" sid="8683240204913956" type="Verde">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Speed">20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="4723682802160147" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5405132571541599" type="pergunta">
+                    <param id="0" name="Text">&quot;Conseguiu realizar a baliza!&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="6999270424216072" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set font color" sid="1318891831329441" type="pergunta">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="807246005380182">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8661450039896428" type="Verde">
+                    <param id="0" name="Object">Cone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="2080078873916691" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="7660624024877997" type="pergunta">
+                    <param id="0" name="Text">&quot;Bateu no cone!&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="9785541580717625" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="2" name="Set visible" sid="8747109925052671" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="7009791716507156" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7369256797976132">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2133149226043212" type="Verde">
+                    <param id="0" name="Object">Vermelho</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="1545167592416802" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="6215290919687393" type="pergunta">
+                    <param id="0" name="Text">&quot;Bateu no carro!&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="1785400274440751" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="2" name="Set visible" sid="9637048579660529" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="1352845734994901" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7035193503704899">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="580995482252644" type="Verde">
+                    <param id="0" name="Object">Amarelo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="616991090477927" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="8442601217917265" type="pergunta">
+                    <param id="0" name="Text">&quot;Bateu no carro!&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="4415816749104474" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="2" name="Set visible" sid="6774511585375141" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="9505015821230939" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5066245190965688">
+            <conditions>
+                <condition id="0" name="On clicked" sid="8466124880372854" type="prosseguir" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9303232397265804" type="System">
+                    <param id="0" name="Layout">Caso4</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

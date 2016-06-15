@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2dfvbrbpdpneo</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1366</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Mouse" sid="4951913549666362">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Verde" sid="9216403753792292">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="7139502262076149">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="Car" sid="4262782835234855">
+                    <behavior id="Car" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4187032409147145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="bugou" pingpong="0" repeatcount="1" repeatto="0" sid="3830699218797461" speed="2">
+                    <frame duration="1" hotspotX="0.494444" hotspotY="0.800995" original-source="C:\Users\Mateus\Desktop\11.png">
+                        <collision-poly>
+                            <point x="0.338889" y="0.21393" />
+                            <point x="0.494444" y="0.0199005" />
+                            <point x="0.794444" y="0.0845771" />
+                            <point x="0.644444" y="0.452736" />
+                            <point x="0.894444" y="0.910448" />
+                            <point x="0.0944444" y="0.910448" />
+                            <point x="0.366667" y="0.452736" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505618" hotspotY="0.805" original-source="C:\Users\Mateus\Desktop\12.png">
+                        <collision-poly>
+                            <point x="0.174157" y="0.06" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.55618" y="0.45" />
+                            <point x="0.904494" y="0.91" />
+                            <point x="0.0955056" y="0.91" />
+                            <point x="0.264045" y="0.45" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="curvaDir" pingpong="0" repeatcount="1" repeatto="0" sid="5483133904922641" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="curvaEsq" pingpong="0" repeatcount="1" repeatto="0" sid="6592421326016833" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button1" sid="8547241325309233">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button2" sid="6338059596312252">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="pergunta" sid="9847610585324612">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="kmh" sid="3807013587960107">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Amarelo" sid="7298472049408166">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="6671993657719622">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5140519322790348" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513158" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgrampa" sid="3222106462269229">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6360059215622168">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9447708585053879" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\ladeira.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button3" sid="3134132072954003">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="block1" sid="1862384797136679">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3378914556960029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="block2" sid="9939609572856868">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7751948378667391" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="block3" sid="3049064170249053">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7552728052048586" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="block4" sid="541014457140866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7348327453141637" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="block5" sid="485803324318683">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8444383860647315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG1" sid="4158728210737788">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7751618332609638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\assets\avenidasemfaixa.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Placa" sid="3201015765531668">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1801144486601808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\placa.png">
+                        <collision-poly>
+                            <point x="0.2375" y="0.158333" />
+                            <point x="0.5" y="0.0416667" />
+                            <point x="0.7625" y="0.158333" />
+                            <point x="0.5375" y="0.5" />
+                            <point x="0.5375" y="0.691667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.45" y="0.7" />
+                            <point x="0.45" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bg2" sid="4530219843552573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4454566696271999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cop" sid="4203744793700712">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="4441187890414769">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989359556936364" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgBalisa" sid="3936300691483915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6053062659665252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\assets\estacionamento.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Azul" sid="7932654260123906">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="5078820141056167">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5112474786867564" speed="5">
+                    <frame duration="1" hotspotX="0.0989011" hotspotY="0.531034" original-source="C:\Users\Mateus\Desktop\car.png">
+                        <collision-poly>
+                            <point x="0.010989" y="0.358621" />
+                            <point x="0.461538" y="0.00689655" />
+                            <point x="0.967033" y="0.324138" />
+                            <point x="0.934066" y="0.503448" />
+                            <point x="0.934066" y="0.662069" />
+                            <point x="0.461538" y="0.993103" />
+                            <point x="0.0549451" y="0.62069" />
+                            <point x="0.0549451" y="0.503448" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Vermelho" sid="3812715326254022">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="1060124897399583">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4514653008214841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513158" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu" sid="1988625668414098">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645956609147901" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\assets\telainicial.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="prosseguir" sid="1160623641184107">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="pedestre" sid="7710314183070141">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="2475713738582257">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="7436166050005871" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="3300964889014663" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgFaixa" sid="2086367961923985">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4826963779266335" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\assets\avenida.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="8081827652994666">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Cone" sid="1816610056574676">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4199878834938533" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\assets\cone.png">
+                        <collision-poly>
+                            <point x="0.198783" y="0.694704" />
+                            <point x="0.423935" y="0.0825545" />
+                            <point x="0.509128" y="0.0778816" />
+                            <point x="0.80933" y="0.674455" />
+                            <point x="0.951319" y="0.777259" />
+                            <point x="0.53144" y="0.998442" />
+                            <point x="0.0486815" y="0.816199" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CarroPreto" sid="9217832471939229">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="8750570854308415">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6070159198283926" speed="5">
+                    <frame duration="1" hotspotX="0.468665" hotspotY="0.517986" original-source="C:\Users\Mateus\Desktop\assets\ladeiracar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Rotatoria" sid="8390671863392348">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5818757489740357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\assets\assets\rotatória.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Faixa_sinal" sid="6629483962116888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Vermelho" pingpong="0" repeatcount="1" repeatto="0" sid="6217793989962663" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\Untitled-2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Verde" pingpong="0" repeatcount="1" repeatto="0" sid="2757050874075843" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mateus\Desktop\Untitled-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Caso1.xml</layout>
+        <layout>Caso2.xml</layout>
+        <layout>Caso3.xml</layout>
+        <layout>Caso4.xml</layout>
+        <layout>Caso5.xml</layout>
+        <layout>Caso6.xml</layout>
+        <layout>Caso7.xml</layout>
+        <layout>Caso8.xml</layout>
+        <layout>Final.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Caso1.xml</event-sheet>
+        <event-sheet>Caso3.xml</event-sheet>
+        <event-sheet>Caso4.xml</event-sheet>
+        <event-sheet>Final.xml</event-sheet>
+        <event-sheet>Menu.xml</event-sheet>
+        <event-sheet>Caso5.xml</event-sheet>
+        <event-sheet>Caso6.xml</event-sheet>
+        <event-sheet>Caso2.xml</event-sheet>
+        <event-sheet>Caso7.xml</event-sheet>
+        <event-sheet>Caso8.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="0" />
+        <global-instance type="Keyboard" uid="69" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Final</name>
+    <events>
+        <event-block sid="9981578941491904">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5754108546943581" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9780027749956812" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="8841848889904835" type="button1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4153653393593242" type="button1">
+                    <param id="0" name="Text">&quot;MENU&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5815125619037822">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5681493957546735" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4657508131403282" type="pergunta">
+                    <param id="0" name="Text">&quot;Sua pontuação final foi de: &quot; &amp; pontos &amp; &quot;/8! Estude melhor as regras de trânsito para ter mais segurança e confiança, e com certeza se sairá melhor na próxima!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8555411505399715">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7961487823979769" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5395863579912698" type="pergunta">
+                    <param id="0" name="Text">&quot;Sua pontuação final foi de: &quot; &amp; pontos &amp; &quot;/8! Parabéns pela pontuação! Você deve conhecer mesmo o trânsito e respeitar suas leis!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4103272347289289">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2164575337533297" type="button1" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7516571541140111" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

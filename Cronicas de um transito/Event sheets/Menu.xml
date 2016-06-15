@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu</name>
+    <events>
+        <event-block sid="1575074262572353">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4855824255205402" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2586704616288702" type="button1">
+                    <param id="0" name="Text">&quot;PLAY&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="6612552936650432" type="button1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9385029527455778" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2021549160221749" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="849950479579822">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2013761645151095" type="button1" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="809659259275963" type="System">
+                    <param id="0" name="Layout">Caso1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

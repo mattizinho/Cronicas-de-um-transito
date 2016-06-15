@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Caso7</name>
+    <events>
+        <event-block sid="3336483082732918">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5176318724509168" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Car" id="8" name="Set enabled" sid="2742591079098576" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5872039988864838" type="pergunta">
+                    <param id="0" name="Text">&quot;Qual carro deve realizar a rotatória primeiro?&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5543216383875017" type="button1">
+                    <param id="0" name="Text">&quot;Carro amarelo&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="101347944494708" type="Button2">
+                    <param id="0" name="Text">&quot;Carro verde&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="1780219791357406" type="button1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="1693834872173119" type="Button2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4517628645692016" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5473929023267521" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6813415791530062">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2342402174651247" type="Button2" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="3393844317828634" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">400</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="3758543152857819" type="Verde">
+                    <param id="0" name="Angle">35</param>
+                </action>
+                <action id="2" name="Set visible" sid="1019672273526757" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="5345392189006201" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="509010219728639" type="pergunta">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="8225650114497244" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="437241369551334" type="Verde">
+                    <param id="0" name="Angle">35</param>
+                </action>
+                <action id="-9" name="Set value" sid="4162770420816762" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1802840745827837">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5211219827423221" type="Verde">
+                    <param id="0" name="Object">block1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9465592568918613" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="104192280321731" type="Verde">
+                    <param id="0" name="Angle">-35</param>
+                </action>
+                <action id="-8" name="Set angle" sid="4317543396744342" type="Verde">
+                    <param id="0" name="Angle">-35</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="753732391186887">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1401300933179447" type="Verde">
+                    <param id="0" name="Object">block2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5151845733529263" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="6104718881150998" type="Verde">
+                    <param id="0" name="Angle">230</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8102856390910795" type="Verde">
+                    <param id="0" name="Angle">230</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1259283207284733">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8691110206150871" type="Verde">
+                    <param id="0" name="Object">block3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4176784558005993" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="8257072590215254" type="Verde">
+                    <param id="0" name="Angle">155</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9744052059218894" type="Verde">
+                    <param id="0" name="Angle">155</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9965643256485633">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5214659687277839" type="Verde">
+                    <param id="0" name="Object">block4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5867861911019918" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="6735665809951652" type="Verde">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-8" name="Set angle" sid="4632139147793366" type="Verde">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="5775260003825505" type="Amarelo">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">400</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="7955716645734706" type="Amarelo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5906398813045942">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8407685440663651" type="Amarelo">
+                    <param id="0" name="Object">block2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9496631016732372" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="1549145286904777" type="Amarelo">
+                    <param id="0" name="Angle">210</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8979300988724534" type="Amarelo">
+                    <param id="0" name="Angle">210</param>
+                </action>
+                <action id="4" name="Set font color" sid="5213407023350954" type="pergunta">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4303866271763094" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="672220397211927" type="pergunta">
+                    <param id="0" name="Text">&quot;Exato! O carro verde tem preferência na rotatória, pois já está em movimento&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="8605084506523942" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1144225207045551">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7316612478895082" type="Amarelo">
+                    <param id="0" name="Object">block3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4732455637389702" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="3574899816850288" type="Amarelo">
+                    <param id="0" name="Angle">155</param>
+                </action>
+                <action id="-8" name="Set angle" sid="4410060834891525" type="Amarelo">
+                    <param id="0" name="Angle">155</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2857321140674821">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1439753019185347" type="Amarelo">
+                    <param id="0" name="Object">block4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8712619108335438" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="452655118508376" type="Amarelo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9819965454254145" type="Amarelo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6853451318937716">
+            <conditions>
+                <condition id="0" name="On clicked" sid="5984240741949741" type="button1" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="1242763550229233" type="Verde">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">400</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="1262746395325241" type="Verde">
+                    <param id="0" name="Angle">35</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6069370013640213" type="Verde">
+                    <param id="0" name="Angle">35</param>
+                </action>
+                <action id="2" name="Set visible" sid="4731484341689038" type="button1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="7517845870144741" type="Button2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3203158090365497" type="pergunta">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="9962704206718524" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1100274228510487">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6474321697320331" type="Verde">
+                    <param id="0" name="Object">block1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6658893717899878" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="4761913167996179" type="Verde">
+                    <param id="0" name="Angle">-35</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1465834682755067" type="Verde">
+                    <param id="0" name="Angle">-35</param>
+                </action>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="8448709106448039" type="Amarelo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-8" name="Set angle" sid="587069429101076" type="Amarelo">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="971524559945254" type="Amarelo">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9007120658959567">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2463327260213092" type="Verde">
+                    <param id="0" name="Object">block2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1075824920454805" type="System">
+                    <param id="0" name="Variable">btn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="3818543164225761" type="Verde">
+                    <param id="0" name="Angle">230</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9456685774703661" type="Verde">
+                    <param id="0" name="Angle">230</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="96302420326157">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5687810623413853" type="Verde">
+                    <param id="0" name="Object">Amarelo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="2978031649839838" type="Verde">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="3269353488124672" type="Amarelo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="2075178913255924" type="pergunta">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6628429822748311" type="pergunta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="2653893107971267" type="pergunta">
+                    <param id="0" name="Text">&quot;Má escolha... O carro verde já estava em seu trajeto&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="6138651921063379" type="prosseguir">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6889950993442383">
+            <conditions>
+                <condition id="0" name="On clicked" sid="3963951081793926" type="prosseguir" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="683655809012572" type="System">
+                    <param id="0" name="Layout">Caso8</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
